@@ -7,7 +7,6 @@ def sum13(nums):
     """
     sum = 0
 
-
     if len(nums) > 0 and nums[0] != 13:  #to avoid list index out of range incase of empty list
         sum += nums[0]
 
@@ -16,8 +15,5 @@ def sum13(nums):
         if nums[i] != 13 and nums[i-1] != 13:
             sum += nums[i]
     return sum
-
-numlist = [1,2,3,4,5,12,13,4,1]
-print(sum13(numlist))
 
 
